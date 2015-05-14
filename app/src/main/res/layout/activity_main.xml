@@ -10,35 +10,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/message"
+        android:hint="Enter in the Message"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:hint="Enter in the Message you would like to send" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="97dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/phone"
-        android:layout_below="@+id/message"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="49dp"
         android:inputType="phone"
-        android:hint="Enter in the Phone Number" />
+        android:hint="Enter in the Phone #"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/delay"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:inputType="number"
-        android:hint="How many minute delay per toast would you like? No 0&apos;s, No Negatives, Only Integers" />
+        android:hint="How many minute delay per toast?"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="53dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="START"
         android:id="@+id/button"
-        android:layout_below="@+id/delay"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="67dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Send a Message!"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
