@@ -15,7 +15,6 @@ public class Receiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         String message = intent.getStringExtra("passedMessage");
         String phoneNumber = intent.getStringExtra("passedPhone");
-        Toast.makeText(context, phoneNumber + ": " + message, Toast.LENGTH_SHORT).show();
         SmsManager smsManager = SmsManager.getDefault();
         smsManager.sendTextMessage(phoneNumber, null, message, null, null);
     }
