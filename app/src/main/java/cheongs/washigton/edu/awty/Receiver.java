@@ -18,5 +18,6 @@ public class Receiver extends BroadcastReceiver {
         SmsManager smsManager = SmsManager.getDefault();
         smsManager.sendTextMessage(phoneNumber, null, message, null, null);
     }
+    // Piggy back off Alarm Manager in order to send text messages in a timely consistent manner
 }
 
